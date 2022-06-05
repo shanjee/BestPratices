@@ -32,7 +32,11 @@ namespace DependencyInjectionMethods.Controllers
             _logger.LogInformation("Scoped: " + _myScopedService.InstanceId);
             _logger.LogInformation("Singleton: " + _mySingletonService.InstanceId);
 
-            return Ok();
+            var message =$"Transient: {_myTransientService.InstanceId} \n" +
+                         $"Scoped: {_myScopedService.InstanceId} \n" +
+                         $"Singleton {_mySingletonService.InstanceId} ";
+
+            return Ok(message);
         }
     }
 }
