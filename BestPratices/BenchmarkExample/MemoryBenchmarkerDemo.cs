@@ -10,7 +10,7 @@ namespace BestPratices.BenchmarkExample
     [MemoryDiagnoser]
     public class MemoryBenchmarkerDemo
     {
-        int NumberOfItems = 10;
+        int NumberOfItems = 5;
 
         [Benchmark]
         public string ConcatStringsUsingStringBuilder()
