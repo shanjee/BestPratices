@@ -34,7 +34,7 @@ namespace DependencyInjectionMethods.Controllers
 
             var message =$"Transient: {_myTransientService.InstanceId} \n" +
                          $"Scoped: {_myScopedService.InstanceId} \n" +
-                         $"Singleton {_mySingletonService.InstanceId} ";
+                         $"Singleton: {_mySingletonService.InstanceId} ";
 
             return Ok(message);
         }
