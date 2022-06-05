@@ -8,3 +8,6 @@
 /DependencyInjectionMethods/bin/Release/net6.0
 /DependencyInjectionMethods/obj/Release/net6.0/refint
 /DependencyInjectionMethods/obj/Release/net6.0
+/DependencyInjectionMethods/obj/Debug/net6.0
+/DependencyInjectionMethods/obj
+/DependencyInjectionMethods/DependencyInjectionMethods.csproj.user
