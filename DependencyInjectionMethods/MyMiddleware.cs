@@ -14,12 +14,17 @@ namespace DependencyInjectionMethods
             _mySingletonService = mySingletonService;
             _next = next;
         }
-        public async Task InvokeAsync(HttpContext context,
-            IMyScopedService myScopedService, IMyTransientService myTransientService)
+        //public async Task InvokeAsync(HttpContext context,
+        //    IMyScopedService myScopedService, IMyTransientService myTransientService)
+        //{
+        //    _logger.LogInformation("Transient: " + myTransientService.InstanceId);
+        //    _logger.LogInformation("Scoped: " + myScopedService.InstanceId);
+        //    _logger.LogInformation("Singleton: " + _mySingletonService.InstanceId);
+        //    await _next(context);
+        //}
+
+        public async Task InvokeAsync(HttpContext context)
         {
-            _logger.LogInformation("Transient: " + myTransientService.InstanceId);
-            _logger.LogInformation("Scoped: " + myScopedService.InstanceId);
-            _logger.LogInformation("Singleton: " + _mySingletonService.InstanceId);
             await _next(context);
         }
     }

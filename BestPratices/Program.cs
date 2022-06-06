@@ -68,7 +68,8 @@ using BestPratices.ErrorLogs;
 
 #region BenchMark
 
-var benchmarkResult = BenchmarkRunner.Run<MemoryBenchmarkerDemo>();
+//var benchmarkResult = BenchmarkRunner.Run<MemoryBenchmarkerDemo>();
+var benchmarkResultOfLinq = BenchmarkRunner.Run<LinqDemo>();
 
 #endregion
 
